@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6{
 
 /* Features */
 #features {
-    padding: 7% 15%;
+    padding: 7% 0%;
     /* margin-top: -15%; */
     background-color: #e7e6e1;
     /* position: relative; */
@@ -154,11 +154,13 @@ h1, h2, h3, h4, h5, h6{
     background-color: #314e52;
     font-family: 'Montserrat';
     font-weight:900;
-    color: #f7f6e7;
+    color: #e7e6e1;
 }
 
 #footer{
-    margin: 2%;
+    background-color: #e7e6e1;
+
+    padding: 2%;
 }
 #footer>a{
     padding: 5% 2%;
@@ -166,6 +168,9 @@ h1, h2, h3, h4, h5, h6{
 }
 #footer>p{
     margin:2%;
+}
+#footer img{
+    width: 5%;
 }
 
 
