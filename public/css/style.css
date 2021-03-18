@@ -1,0 +1,186 @@
+body {
+font-family: 'Poppins', serif;
+text-align: center;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+/* Headings */
+
+.big-heading{
+    padding-top: 10%;
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: 900;
+}
+
+/* Title */
+#title {
+    background-color: #314e52;
+    color: #f7f6e7;
+    text-align: left;
+}
+.container-fluid {
+    padding: 7% 15%;
+}
+
+.container-fluid>h3{
+
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: 900;
+}
+
+#title .container-fluid{
+    padding: 3% 15% 0%;
+}
+ 
+#title>.row{
+    display:flex
+}
+
+.flex-column1{
+    width: 50%;
+    flex: 1;
+    justify-content: space-evenly;
+}
+.flex-column2{
+    width: 50%;
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+/* Navigation Buttons */
+.navbar {
+    padding: 0 0 4.5rem;
+}
+.navbar-brand {
+    font-size: 2.5rem;
+    font-family: 'Zilla Slab', sans-serif;
+    font-weight: bold;
+}
+.navbar-brand span{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+.nav-item {
+    font-family: "Poppins", sans-serif;
+    padding: 0 1rem;
+    opacity: 100%;
+}
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: light;
+}
+
+/* Download Buttons */
+.down-btn {
+    margin: 5% 3% 5% 0%;
+}
+
+/* Title Image */
+.title-image {
+    position: relative;
+    width: 100%;
+    right: 5%;
+}
+
+/* Features */
+#features {
+    padding: 7% 15%;
+    /* margin-top: -15%; */
+    background-color: #e7e6e1;
+    /* position: relative; */
+}
+
+
+.feature {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+}
+
+.fas {
+    padding-bottom: 1rem;
+    color: #f2a154;
+}
+
+.fas:hover {
+    color: #ffa755;
+}
+
+.feature-col > p {
+    color: #8f8f8f;
+}
+
+/* Testimonials */
+
+#testimonials {
+    padding: 7% 15%;
+    background-color: #f2a154;
+    color: #e7e6e1;
+}
+
+.testimonial-img {
+    width: 10%;
+    border-radius: 100%;
+    margin: 1.5rem;
+}
+
+.testimonial-text{
+    font-style: bold;
+    font-weight: 900;
+    line-height: 1.5;
+    font-size: 3rem;
+}
+
+
+.test-logo {
+    width: 15%;
+    margin: 1rem 2rem 1rem;
+}
+
+.carousel-item {
+    padding: 0 15%;
+}
+
+
+
+/* Call to action */
+#cta{
+    background-color: #314e52;
+    font-family: 'Montserrat';
+    font-weight:900;
+    color: #f7f6e7;
+}
+
+#footer{
+    margin: 2%;
+}
+#footer>a{
+    padding: 5% 2%;
+    color: #000;
+}
+#footer>p{
+    margin:2%;
+}
+
+
+
+
+/* Mobile Response */
+@media (max-width: 1108px) {
+    .title-image {
+        position: static;
+        transform: rotate(0deg);
+    }
+    #title{
+        text-align: center;
+    }
+    #features {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "health-ramp",
+  "version": "1.0.0",
+  "description": "A simple web app that helps monitor your daily health",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Megh Rathod, Aakash Lakshman, Raghav Chaturvedy, Prem Thakkar",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21"
+  }
+}

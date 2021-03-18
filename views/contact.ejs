@@ -1,0 +1,13 @@
+<%- include('partials/header'); -%>
+<body>
+    <h1>Contact Us</h1>
+    <% for(let i=0;i<l1.length;i++){ %>
+        <img src='..C:/Users/hp/3D Objects/Blank-Hackers-master/public/images/imager.jpeg'>
+        <p><%= l1[i].Name %></p>
+        <% for(let j=i;j<=i;j++){ %>
+        <p><%= l1[j].EmailId %></p>
+        <p><%= l1[j].PhoneNo %></p>
+   <% } %>
+   <% } %>
+</body>
+<%- include('partials/footer'); -%>
