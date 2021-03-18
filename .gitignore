@@ -117,3 +117,6 @@ dist
 
 #Photoshop files for now
 *.psd
+
+#Zip files for now
+*.zip
