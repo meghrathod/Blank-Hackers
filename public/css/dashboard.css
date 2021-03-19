@@ -1,0 +1,33 @@
+.bg-primary
+{
+    background-color: #314e52 !important;
+}
+
+.bg-secondary
+{
+    background-color: #f2a154 !important;
+}
+
+a.bg-secondary:hover,
+a.bg-secondary:focus,
+button.bg-secondary:hover,
+button.bg-secondary:focus
+{
+    background-color: #e77911 !important;
+}
+
+a.bg-primary:hover,
+a.bg-primary:focus,
+button.bg-primary:hover,
+button.bg-primary:focus
+{
+    background-color: #8f8f8f !important;
+}
+
+.statement{
+    padding: 2%;
+}
+
+.statement>h2{
+    color: #e7e6e1;
+}
