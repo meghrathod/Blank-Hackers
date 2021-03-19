@@ -1,11 +1,20 @@
+body{
+    background-color: #e7e6e1;
+}
+
 .bg-primary
 {
-    background-color: #314e52 !important;
+    background-color: #f2a154 !important;
 }
 
 .bg-secondary
 {
-    background-color: #f2a154 !important;
+    background-color: #314e52 !important;
+}
+
+.sidenav
+{
+    background-color: #314e52 !important;
 }
 
 a.bg-secondary:hover,
@@ -29,5 +38,43 @@ button.bg-primary:focus
 }
 
 .statement>h2{
-    color: #e7e6e1;
+    color: #fff;
+}
+
+.card{
+    min-height: 200px;
+}
+
+.nav-link{
+    color: antiquewhite;
+}
+.nav-link.active{
+    color: #8f8f8f;
+}
+
+.profile-name{
+    font-family: 'Roboto Slab';
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.header{
+    min-height: 700px;
+}
+
+#footer {
+    text-align: center;
+    background-color: #e7e6e1;
+
+    padding: 2%;
+}
+#footer > a {
+    padding: 5% 2%;
+    color: #000;
+}
+#footer > p {
+    margin: 0.5%;
+}
+#footer img {
+    width: 5%;
 }
