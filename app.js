@@ -8,8 +8,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 const firstContents = ["About us", "Blog", "Dashboard", "Contact Us"];
-const homeStartingContent =
-    "Lacus vel facilisis volutpat est velit egestas dui id ornare. Semper auctor neque vitae tempus quam. Sit amet cursus sit amet dictum sit amet justo. Viverra tellus in hac habitasse. Imperdiet proin fermentum leo vel orci porta. Donec ultrices tincidunt arcu non sodales neque sodales ut. Mattis molestie a iaculis at erat pellentesque adipiscing. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Adipiscing elit ut aliquam purus sit amet luctus venenatis lectus. Ultrices vitae auctor eu augue ut lectus arcu bibendum at. Odio euismod lacinia at quis risus sed vulputate odio ut. Cursus mattis molestie a iaculis at erat pellentesque adipiscing.";
+const blogStart = "Welcome to our blog where we will regularly post carefully chose articles to help you improve your health and lifestyle."
 const posts = [];
 
 app.get("/", function (req, res) {
@@ -43,7 +42,7 @@ app.get("/contact", function (req, res) {
     res.render("contact", { l1: contact });
 });
 app.get("/blog", function (req, res) {
-    res.render("blog", { l1: homeStartingContent, posts: posts });
+    res.render("blog", { l1: blogStart, posts: posts });
 });
 app.get("/compose", function (req, res) {
     res.render("compose");
@@ -70,6 +69,13 @@ app.get("/posts/:postName", function (req, res) {
         }
     }
 });
+
+
+app.get("/dashboard", function (req, res){
+    res.render("dashboard")
+})
+
 app.listen(3000, function (req, res) {
     console.log("Listening on port 3000.");
 });
+

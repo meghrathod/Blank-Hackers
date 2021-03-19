@@ -1,14 +1,20 @@
 body {
-font-family: 'Poppins', serif;
-text-align: center;
+    font-family: "Poppins", serif;
+    text-align: center;
+    /* padding: 3% 5%; */
 }
-h1, h2, h3, h4, h5, h6{
-    font-family: 'Roboto Slab', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto Slab", sans-serif;
 }
 
 /* Headings */
 
-.big-heading{
+.big-heading {
     padding-top: 10%;
     font-size: 3rem;
     line-height: 1.5;
@@ -25,27 +31,26 @@ h1, h2, h3, h4, h5, h6{
     padding: 7% 15%;
 }
 
-.container-fluid>h3{
-
+.container-fluid > h3 {
     font-size: 3rem;
     line-height: 1.5;
     font-weight: 900;
 }
 
-#title .container-fluid{
-    padding: 3% 15% 0%;
-}
- 
-#title>.row{
-    display:flex
+#title .container-fluid {
+    padding: 1% 15% 0%;
 }
 
-.flex-column1{
+#title > .row {
+    display: flex;
+}
+
+.flex-column1 {
     width: 50%;
     flex: 1;
     justify-content: space-evenly;
 }
-.flex-column2{
+.flex-column2 {
     width: 50%;
     flex: 1;
     justify-content: space-evenly;
@@ -53,15 +58,19 @@ h1, h2, h3, h4, h5, h6{
 
 /* Navigation Buttons */
 .navbar {
-    padding: 0 0 4.5rem;
+    padding: 0 0;
+    background-color: #314e52;
+    color: #f7f6e7;
+    margin-bottom: 2%;
 }
 .navbar-brand {
     font-size: 2.5rem;
-    font-family: 'Zilla Slab', sans-serif;
+    padding-left: 2%;
+    font-family: "Zilla Slab", sans-serif;
     font-weight: bold;
 }
-.navbar-brand span{
-    font-family: 'Poppins', sans-serif;
+.navbar-brand span {
+    font-family: "Poppins", sans-serif;
     font-weight: 300;
 }
 .nav-item {
@@ -93,7 +102,6 @@ h1, h2, h3, h4, h5, h6{
     background-color: #e7e6e1;
     /* position: relative; */
 }
-
 
 .feature {
     font-family: "Roboto Slab", sans-serif;
@@ -130,13 +138,12 @@ h1, h2, h3, h4, h5, h6{
     margin: 1.5rem;
 }
 
-.testimonial-text{
+.testimonial-text {
     font-style: bold;
     font-weight: 900;
     line-height: 1.5;
     font-size: 3rem;
 }
-
 
 .test-logo {
     width: 15%;
@@ -147,34 +154,39 @@ h1, h2, h3, h4, h5, h6{
     padding: 0 15%;
 }
 
-
-
 /* Call to action */
-#cta{
+#cta {
     background-color: #314e52;
-    font-family: 'Montserrat';
-    font-weight:900;
+    font-family: "Montserrat";
+    font-weight: 900;
     color: #e7e6e1;
 }
 
-#footer{
+#footer {
     background-color: #e7e6e1;
 
     padding: 2%;
 }
-#footer>a{
+#footer > a {
     padding: 5% 2%;
     color: #000;
 }
-#footer>p{
-    margin:2%;
+#footer > p {
+    margin: 2%;
 }
-#footer img{
+#footer img {
     width: 5%;
 }
 
+.about img {
+    width: 5%;
+}
 
-
+.blog{
+    text-align: left;
+    margin: 5%;
+    min-height: 25rem;
+}
 
 /* Mobile Response */
 @media (max-width: 1108px) {
@@ -182,7 +194,7 @@ h1, h2, h3, h4, h5, h6{
         position: static;
         transform: rotate(0deg);
     }
-    #title{
+    #title {
         text-align: center;
     }
     #features {

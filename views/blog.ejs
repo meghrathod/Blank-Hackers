@@ -1,13 +1,17 @@
 <%- include('partials/header'); -%>
-<form class="" method="post" action="/blog">
-    <h1>Blog</h1>
-    <p><%= l1%></p>
-    <% for(let i=0;i<posts.length;i++) {%>
-    <h2><%= posts[i].title%></h2>
-    <p>
-        <%= posts[i].content.substring(0,100)+"......"%> 
-        <a href="/posts/<%=posts[i].title %>">Read more</a>
-    </p>
-    <% } %>
-</form>
+    <%- include('partials/navbar'); -%>
+
+
+    <div class="blog">
+        <h1>Blog</h1>
+        <p><%= l1%></p>
+        <% for(let i=0;i<posts.length;i++) {%>
+        <h2><%= posts[i].title%></h2>
+        <p>
+            <%= posts[i].content.substring(0,100)+"......"%>
+            <a href="/posts/<%=posts[i].title %>">Read more</a>
+        </p>
+        <% } %>
+        
+    </div>
 <%- include('partials/footer'); -%>
